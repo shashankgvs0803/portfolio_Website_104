@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin-top: 56px; /* Offset for fixed navbar */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+/* About Section */
+#about {
+    padding-top: 50px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #131314;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Projects Section */
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact input, #contact textarea {
+    border-radius: 5;
+
+}
+
+#contact input:focus, #contact textarea:focus {
+    box-shadow: none;
+
+}
+
